@@ -3,9 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import json
 import plotly.express as px
-import geopandas as gpd
 df=pd.read_csv('https://raw.githubusercontent.com/pss5-web/RCEL_506_Data_Viz/refs/heads/main/Grid%20view.csv')
 df
 df.columns
