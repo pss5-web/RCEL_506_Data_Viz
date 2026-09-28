@@ -1,7 +1,7 @@
 streamlit
 plotly-express
 pandas
-matplotlib.pyplot
+matplotlib
 seaborn
 numpy
 json
