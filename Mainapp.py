@@ -5,12 +5,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 df=pd.read_csv('https://raw.githubusercontent.com/pss5-web/RCEL_506_Data_Viz/refs/heads/main/Grid%20view.csv')
-df
-df.columns
 cols2remove=['Author','Secondary Author(s)', 'Illustrator(s)', 'Translator(s)', 'Series Name', 'Initiating Action']
 df.drop(columns=cols2remove, inplace=True)
 banned_df = df[df['Ban Status'] == 'Banned']
-banned_df
 state_counts = banned_df.groupby(banned_df.iloc[:, 1])['Title'].count().reset_index(name='Title_Count')
 print(state_counts)
 unique_states = banned_df.iloc[:, 1].unique().tolist()
